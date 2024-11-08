@@ -20,7 +20,7 @@ class BookFactory extends Factory
     public function definition(): array
     {
         return [
-        'Judul Buku' => $this->faker->sentence(5),
+        'Judul Buku' => $this->faker->unique()->sentence(5),
         'Author' => $this->faker->name(),
         'Tahun Terbit' => $this->faker->year,
         

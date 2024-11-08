@@ -14,7 +14,10 @@ class booksSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\Book::factory(10)->create();
+        // \App\Models\Book::factory(10)->create();
+
+        Book::factory()->count(20)->create(); // Membuat 20 buku
+
 
     }
 }

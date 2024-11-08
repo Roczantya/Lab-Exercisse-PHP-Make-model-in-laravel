@@ -20,7 +20,7 @@ class JournalFactory extends Factory
     public function definition(): array
     {
         return [
-            'Judul Journal' => $this->faker->sentence(5),
+            'Judul Journal' => $this->faker->unique()->sentence(5),
             'Author' => $this->faker->name(),
             'Tahun Terbit' => $this->faker->year,
         ];

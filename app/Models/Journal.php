@@ -14,6 +14,8 @@ class Journal extends Model
      *
      * @var array
      */
+    public $timestamps = false; // Menonaktifkan timestamps
+
     protected $fillable = [
         'Judul Journal',
         'Author',

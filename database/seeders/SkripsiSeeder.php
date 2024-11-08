@@ -4,16 +4,16 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Journal;
+use App\Models\Skripsi;
 
-class JournalSeeder extends Seeder
+class SkripsiSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Journal::factory()->count(20)->create(); // Membuat 20 buku
+        Skripsi::factory()->count(20)->create(); // Membuat 20 buku
 
     }
 }

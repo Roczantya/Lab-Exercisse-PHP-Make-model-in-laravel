@@ -15,7 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('Judul Surat Kabar');
             $table->string('Author');
-            $table->year('Tahun terbit');
+            $table->year('Tahun Terbit');
+            $table->timestamps(); // Menambahkan kolom created_at dan updated_at
+
         });
     }
 
