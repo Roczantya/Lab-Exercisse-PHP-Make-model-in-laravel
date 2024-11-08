@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('skripsis', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('Judul Skripsi');
+            $table->string('Author');
+            $table->year('Tahun terbit');
         });
     }
 
